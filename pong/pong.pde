@@ -25,8 +25,10 @@ void drawGameScreen()
   ballpaddlebounce();
   leftLose();
   rightLose();
+  fill(paddlecolor1);
   text(leftscore, 150, 123);
-  text(rightscore, 300, 123);
+  fill(paddlecolor2);
+  text(rightscore, 300, 123);  
   // Display Scores
 }
 
