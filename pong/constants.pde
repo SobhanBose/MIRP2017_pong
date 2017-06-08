@@ -6,7 +6,7 @@ float BALL_VELOCITY = 8; //This is the MAX speed of the ball.
 float PADDLE_VELOCITY = 10;
 
 // Background Color
-int bgColor = 0;
+color bgColor = color(13, 23, 26);
 
 // Ball parameters
 float ballX, ballY;
@@ -39,7 +39,6 @@ boolean left_up, right_up, left_down, right_down;
 boolean reset, pause, start;
 
 // Colours
-color bgcolor=color(0,0,0);
 color paddlecolor1=color(0, 100, 255);
 color paddlecolor2=color(0, 255, 100);
 float coeff=1;

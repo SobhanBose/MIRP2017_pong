@@ -15,7 +15,7 @@ void draw()
 
 void drawGameScreen()
 {
-  background(bgcolor);
+  background(bgColor);
   updateBallVelocity();
   Bounce();
   updateBallPosition();
