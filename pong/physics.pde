@@ -58,11 +58,13 @@ if(ballX>displayWidth-(paddleWidth+ballRadius) && (ballY>=(rightPaddle-paddleLen
 {
 ballX=displayWidth-(paddleWidth+ballRadius);
 ballVx *= -coeff;
+ballVy*=-coeff;
 }
 if(ballX<ballRadius+paddleWidth && (ballY>=(leftPaddle-paddleLength)) && ballY<=leftPaddle+paddleLength) 
 {
 ballX=ballRadius+paddleWidth;
 ballVx *= -coeff;
+ballVy*=-coeff;
 }
 
 }

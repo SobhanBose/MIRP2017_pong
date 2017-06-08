@@ -5,7 +5,7 @@ void setup() {
   ballX=width/2;
   ballY=height/2;
   ballVx=BALL_VELOCITY;
-  ballVy=0;
+  ballVy=1;
 }
 
 void draw()
