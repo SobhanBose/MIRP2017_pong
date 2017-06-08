@@ -54,13 +54,13 @@ if(ballX<=0)
 
 void ballpaddlebounce()
 {
-if(ballX>displayWidth-(paddleWidth+ballRadius) && (ballY>=(rightPaddle-paddleLength)) && (ballY<=rightPaddle+paddleLength)) 
+if(ballX>displayWidth-(paddleWidth+ballRadius) && (ballY>=(rightPaddle-paddleLength/2)) && (ballY<=rightPaddle+paddleLength/2)) 
 {
 ballX=displayWidth-(paddleWidth+ballRadius);
 ballVx *= -coeff;
 ballVy*=-coeff;
 }
-if(ballX<ballRadius+paddleWidth && (ballY>=(leftPaddle-paddleLength)) && ballY<=leftPaddle+paddleLength) 
+if(ballX<ballRadius+paddleWidth && (ballY>=(leftPaddle-paddleLength/2)) && ballY<=leftPaddle+paddleLength/2) 
 {
 ballX=ballRadius+paddleWidth;
 ballVx *= -coeff;
