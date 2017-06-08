@@ -1,5 +1,11 @@
-void rightLose() {
+void rightLose() 
+{
+   if(ballX+ballRadius>=displayWidth)
+   leftscore++;
 }
 
-void leftLose() {
+void leftLose() 
+{
+   if(ballX<=0)
+   rightscore++;
 }

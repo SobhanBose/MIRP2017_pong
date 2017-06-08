@@ -43,4 +43,7 @@ color paddlecolor1=color(0, 100, 255);
 color paddlecolor2=color(0, 255, 100);
 float coeff=1;
 
-float buffer=halflp;
+float buffer=paddleLength/2;
+
+int leftscore=0;
+int rightscore=0;

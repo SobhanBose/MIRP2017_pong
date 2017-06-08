@@ -23,6 +23,10 @@ void drawGameScreen()
   drawBall();
   drawPaddles();
   ballpaddlebounce();
+  leftLose();
+  rightLose();
+  text(leftscore, 150, 123);
+  text(rightscore, 300, 123);
   // Display Scores
 }
 
