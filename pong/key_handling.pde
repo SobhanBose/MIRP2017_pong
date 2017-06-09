@@ -3,9 +3,9 @@ void keyPressed() {
   if (key == LEFT_DOWN)     left_down = true;
   if (key == RIGHT_UP)      right_up = true;
   if (key == RIGHT_DOWN)    right_down = true;
-  if (key == RESET)         reset = true;
+  if (key == RESET)         gamestate=0;
   if (key == PAUSE)         pause = true;
-  if (key == START)         start = true;
+  if (key == START)         gamestate=1;
 }
 
 void keyReleased() {

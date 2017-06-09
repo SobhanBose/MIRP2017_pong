@@ -1,4 +1,5 @@
-void setup() {
+void setup()
+{
   size(displayWidth, displayHeight);
   resetGame();
   textFont(createFont("Arial Bold", 50));
@@ -10,7 +11,10 @@ void setup() {
 
 void draw()
 {
-  drawGameScreen();
+  if(gamestate==0)
+      startscreen();
+  if(gamestate==1)
+      drawGameScreen();
 }
 
 void drawGameScreen()
@@ -26,10 +30,11 @@ void drawGameScreen()
   leftLose();
   rightLose();
   fill(paddlecolor1);
+  textSize(50);
   text(leftscore, 150, 123);
   fill(paddlecolor2);
+  textSize(50);
   text(rightscore, 300, 123);  
-  // Display Scores
 }
 
 void drawBall() 
@@ -49,11 +54,31 @@ void drawPaddles()
   rect(displayWidth-10, rightPaddle, paddleWidth, paddleLength, 30, 0, 0, 30);
 }
 
-void resetGame(){
-  // Reset Ball and Paddle Positions
-  // Reset Ball Velocity
+void resetGame()
+{
+  background(bgColor);
+  ballX=width/2;
+  ballY=height/2;
+  leftPaddle=displayHeight/2;
+  rightPaddle=displayWidth/2;
+  ballVx=BALL_VELOCITY;
+  ballVy=1;
 }
 
-void displayScores() {
-  // Display Left and Right player Scores
+void startscreen()
+{
+  background(bgColor);
+  fill(paddlecolor2);
+  textSize(72);
+  text("PONG", width/2-100, height/2);
+  textSize(12);
+  text("Press 's' to start" , width/2-45, height/2+50);
+  leftscore=0;
+  rightscore=0;
+  ballX=width/2;
+  ballY=height/2;
+  leftPaddle=displayHeight/2;
+  rightPaddle=displayWidth/2;
+  ballVx=BALL_VELOCITY;
+  ballVy=1;
 }

@@ -20,7 +20,6 @@ float halflp=61;
 float halfrp=61;
 // Paddle Dimensions
 float paddleLength = 126, paddleWidth = 15;
-int paddleColor = 255;
 
 // Score Variables
 int leftScore, rightScore;
@@ -47,3 +46,5 @@ float buffer=paddleLength/2;
 
 int leftscore=0;
 int rightscore=0;
+
+int gamestate=0;
