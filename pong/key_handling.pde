@@ -4,7 +4,7 @@ void keyPressed() {
   if (key == RIGHT_UP)      right_up = true;
   if (key == RIGHT_DOWN)    right_down = true;
   if (key == RESET)         gamestate=0;
-  if (key == PAUSE)         pause = true;
+  if (key == PAUSE)         gamestate=2;
   if (key == START)         gamestate=1;
 }
 

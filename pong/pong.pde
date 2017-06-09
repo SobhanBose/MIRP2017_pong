@@ -15,6 +15,8 @@ void draw()
       startscreen();
   if(gamestate==1)
       drawGameScreen();
+  if(gamestate==2)
+      pausegame();
 }
 
 void drawGameScreen()
@@ -54,21 +56,19 @@ void drawPaddles()
   rect(displayWidth-10, rightPaddle, paddleWidth, paddleLength, 30, 0, 0, 30);
 }
 
-void resetGame()
+void pausegame()
 {
-  background(bgColor);
-  ballX=width/2;
-  ballY=height/2;
-  leftPaddle=displayHeight/2;
-  rightPaddle=displayWidth/2;
-  ballVx=BALL_VELOCITY;
-  ballVy=1;
+  fill(textcolor);
+  textSize(50);
+  text("PAUSED", width/2-100, height/2);
+  textSize(18);
+  text("Press 's' to start", width/2-70, height/2+50);
 }
 
 void startscreen()
 {
   background(bgColor);
-  fill(paddlecolor2);
+  fill(textcolor);
   textSize(72);
   text("PONG", width/2-100, height/2);
   textSize(12);
@@ -81,4 +81,9 @@ void startscreen()
   rightPaddle=displayWidth/2;
   ballVx=BALL_VELOCITY;
   ballVy=1;
+}
+
+void resetGame()
+{
+  
 }

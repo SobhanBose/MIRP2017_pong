@@ -2,7 +2,7 @@
 int displayWidth=500, displayHeight=500;
 
 // Velocity Cnstants
-float BALL_VELOCITY = 8; //This is the MAX speed of the ball.
+float BALL_VELOCITY = 7; //This is the MAX speed of the ball.
 float PADDLE_VELOCITY = 10;
 
 // Background Color
@@ -48,3 +48,5 @@ int leftscore=0;
 int rightscore=0;
 
 int gamestate=0;
+
+color textcolor=color(243,234,21);
